@@ -1,0 +1,255 @@
+<!DOCTYPE html><html class="astro-3E5Y3RTR"><head>
+  <link rel="stylesheet/less" type="text/css" href="https://cstarneko.github.io/cstarneko/gallerystyles/style.less">
+  <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
+
+
+<link rel="stylesheet" href="../assets/gallery.d1667301.css">
+</head>	
+<body><div class="container astro-3E5Y3RTR">
+  <div class="masonry astro-3E5Y3RTR">
+  <div class="brick astro-3E5Y3RTR">
+    <img id="waifu" class="astro-3E5Y3RTR">
+  </div>
+  <div class="brick astro-3E5Y3RTR">	        	
+    <img id="waifu2" class="astro-3E5Y3RTR">
+  </div>
+  <div class="brick astro-3E5Y3RTR">
+ <img id="waifu3" class="astro-3E5Y3RTR">
+  </div>
+  <div class="brick astro-3E5Y3RTR">
+ <img id="waifu4" class="astro-3E5Y3RTR">
+  </div>
+  <div class="brick astro-3E5Y3RTR">	        	
+ <img id="waifu5" class="astro-3E5Y3RTR">
+  </div>
+  <div class="brick astro-3E5Y3RTR">	        	
+ <img id="waifu6" class="astro-3E5Y3RTR">
+  </div>
+  <div class="brick astro-3E5Y3RTR">	        	
+ <img id="waifu7" class="astro-3E5Y3RTR">
+  </div>
+  <div class="brick astro-3E5Y3RTR">	        	
+ <img id="waifu8" class="astro-3E5Y3RTR">
+  </div>
+  <div class="brick astro-3E5Y3RTR">	        	
+ <img id="waifu9" class="astro-3E5Y3RTR">
+  </div>
+  <div class="brick astro-3E5Y3RTR">	        	
+ <img id="waifu10" class="astro-3E5Y3RTR">
+  </div>
+  <div class="brick astro-3E5Y3RTR">
+ <img id="waifu11" class="astro-3E5Y3RTR">
+  </div>
+  <div class="brick astro-3E5Y3RTR">	        	
+ <img id="waifu12" class="astro-3E5Y3RTR">
+  </div>
+  <div class="brick astro-3E5Y3RTR">
+ <img id="waifu13" class="astro-3E5Y3RTR">
+  </div>
+  <div class="brick astro-3E5Y3RTR">
+ <img id="waifu14" class="astro-3E5Y3RTR">
+  </div>
+  <div class="brick astro-3E5Y3RTR">	        	
+ <img id="waifu15" class="astro-3E5Y3RTR">
+  </div>
+  <div class="brick astro-3E5Y3RTR">	        	
+ <img id="waifu16" class="astro-3E5Y3RTR">
+  </div>
+  <div class="brick astro-3E5Y3RTR">	        	
+ <img id="waifu17" class="astro-3E5Y3RTR">
+  </div>
+  <div class="brick astro-3E5Y3RTR">	        	
+ <img id="waifu18" class="astro-3E5Y3RTR">
+  </div>
+  <div class="brick astro-3E5Y3RTR">	        	
+ <img id="waifu19" class="astro-3E5Y3RTR">
+  </div>
+  <div class="brick astro-3E5Y3RTR">
+ <img id="waifu20" class="astro-3E5Y3RTR">
+  </div>
+  <div class="brick astro-3E5Y3RTR">	        	
+ <img id="waifu21" class="astro-3E5Y3RTR">
+  </div>
+  <div class="brick astro-3E5Y3RTR">	        	
+ <img id="waifu22" class="astro-3E5Y3RTR">
+  </div>
+  <div class="brick astro-3E5Y3RTR">	        	
+ <img id="waifu23" class="astro-3E5Y3RTR">
+  </div>
+  <div class="brick astro-3E5Y3RTR">	        	
+ <img id="waifu24" class="astro-3E5Y3RTR">
+  </div>
+  <div class="brick astro-3E5Y3RTR">
+ <img id="waifu25" class="astro-3E5Y3RTR">
+  </div>
+</div>
+</div>
+<div class="wrapper astro-3E5Y3RTR">
+<a id="btn-waifu" class="astro-3E5Y3RTR">
+<div class="icon refresh astro-3E5Y3RTR">
+    <span class="astro-3E5Y3RTR"><i class="fa-solid fa-arrows-rotate fa-2x astro-3E5Y3RTR" style="color:white"></i></span>
+  </div></a>
+
+</div>
+
+
+    <link rel="stylesheet" href="https://cstarneko.github.io/cstarneko/mainstyles/fontawesome/css/fontawesome-all.min.css">   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://cstarneko.github.io/cstarneko/images/nyan.png">
+    <title>cstarneko gallery</title>
+
+
+
+
+
+<script src="https://kit.fontawesome.com/b2ab1596e8.js" crossorigin="anonymous"></script>
+<script>
+
+window.onload=fetchWaifuImage();
+
+const waifuButton = document.getElementById('btn-waifu');
+waifuButton.addEventListener('click', fetchWaifuImage);
+
+const nsfwwaifuButton = document.getElementById('btn-nsfw-waifu');
+nsfwwaifuButton.addEventListener('click', fetchNSFWWaifuImage);
+
+
+
+function fetchWaifuImage() {
+fetch('https://api.waifu.pics/sfw/neko')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('waifu').src = data.url;
+  }) 
+    
+    fetch('https://api.waifu.pics/sfw/hug')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('waifu2').src = data.url;
+  })   
+    fetch('https://api.waifu.pics/sfw/neko')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('waifu3').src = data.url;
+  })  
+
+    fetch('https://api.waifu.pics/sfw/awoo')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('waifu4').src = data.url;
+  })  
+
+    fetch('https://api.waifu.pics/sfw/waifu')
+    .then(response => response.json())
+    .then(data => {
+       document.getElementById('waifu5').src = data.url;
+  }) 
+      fetch('https://api.waifu.pics/sfw/pat')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('waifu6').src = data.url;
+  }) 
+      fetch('https://api.waifu.pics/sfw/neko')
+    .then(response => response.json())
+    .then(data => {
+       document.getElementById('waifu7').src = data.url;
+  }) 
+      fetch('https://api.waifu.pics/sfw/dance')
+    .then(response => response.json())
+    .then(data => {
+       document.getElementById('waifu8').src = data.url;
+  }) 
+
+   fetch('https://api.waifu.pics/sfw/waifu')
+    .then(response => response.json())
+    .then(data => {
+       document.getElementById('waifu9').src = data.url;
+  }) 
+      fetch('https://api.waifu.pics/sfw/poke')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('waifu10').src = data.url;
+  }) 
+      fetch('https://api.waifu.pics/sfw/neko')
+    .then(response => response.json())
+    .then(data => {
+       document.getElementById('waifu11').src = data.url;
+  }) 
+      fetch('https://api.waifu.pics/sfw/waifu')
+    .then(response => response.json())
+    .then(data => {
+       document.getElementById('waifu12').src = data.url;
+  }) 
+   fetch('https://api.waifu.pics/sfw/happy')
+    .then(response => response.json())
+    .then(data => {
+       document.getElementById('waifu13').src = data.url;
+  }) 
+      fetch('https://api.waifu.pics/sfw/waifu')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('waifu14').src = data.url;
+  }) 
+      fetch('https://api.waifu.pics/sfw/neko')
+    .then(response => response.json())
+    .then(data => {
+       document.getElementById('waifu15').src = data.url;
+  }) 
+      fetch('https://api.waifu.pics/sfw/nom')
+    .then(response => response.json())
+    .then(data => {
+       document.getElementById('waifu16').src = data.url;
+  }) 
+      fetch('https://api.waifu.pics/sfw/wave')
+    .then(response => response.json())
+    .then(data => {
+       document.getElementById('waifu17').src = data.url;
+  }) 
+        fetch('https://api.waifu.pics/sfw/waifu')
+    .then(response => response.json())
+    .then(data => {
+       document.getElementById('waifu18').src = data.url;
+  }) 
+        fetch('https://api.waifu.pics/sfw/neko')
+    .then(response => response.json())
+    .then(data => {
+       document.getElementById('waifu19').src = data.url;
+  }) 
+      fetch('https://api.waifu.pics/sfw/handhold')
+    .then(response => response.json())
+    .then(data => {
+       document.getElementById('waifu20').src = data.url;
+  }) 
+        fetch('https://api.waifu.pics/sfw/blush')
+    .then(response => response.json())
+    .then(data => {
+       document.getElementById('waifu21').src = data.url;
+  }) 
+        fetch('https://api.waifu.pics/sfw/pat')
+    .then(response => response.json())
+    .then(data => {
+       document.getElementById('waifu22').src = data.url;
+  }) 
+        fetch('https://api.waifu.pics/sfw/lick')
+    .then(response => response.json())
+    .then(data => {
+       document.getElementById('waifu23').src = data.url;
+  }) 
+        fetch('https://api.waifu.pics/sfw/awoo')
+    .then(response => response.json())
+    .then(data => {
+       document.getElementById('waifu24').src = data.url;
+  }) 
+          fetch('https://api.waifu.pics/sfw/neko')
+    .then(response => response.json())
+    .then(data => {
+       document.getElementById('waifu24').src = data.url;
+  }) 
+
+}
+
+
+</script>
+
+</body></html>
