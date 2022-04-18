@@ -988,7 +988,7 @@ ol {
 }
 
 .footer__subscriber {
-	background: #6763fd;
+	background: none;
 	padding: 40px;
 	border-radius: 10px;
 	top: -65px;
