@@ -1655,8 +1655,8 @@ ol {
 }
 
 .blog__item__pic {
-	height: 360px;
-	width: 370px;
+	height: 300px;
+	width: 300px;
 	position: relative;
 	float: left;
 	border-radius: 20px 0 0 20px;
